@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.Controller">
+      <MenuBar layoutX="14.0" layoutY="14.0" fx:id="Menu">
+          <Menu mnemonicParsing="false" text="Игра">
+              <MenuItem mnemonicParsing="false" text="Сохранить" fx:id="MSave" />
+
+              <MenuItem mnemonicParsing="false" text="Загрузить" fx:id="MLoad"/>
+          </Menu>
+      </MenuBar>
+</Pane>
