@@ -4,13 +4,16 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.Controller">
-      <MenuBar layoutX="14.0" layoutY="14.0" fx:id="Menu">
-          <Menu mnemonicParsing="false" text="Игра">
-              <MenuItem mnemonicParsing="false" text="Сохранить" fx:id="MSave" />
-
-              <MenuItem mnemonicParsing="false" text="Загрузить" fx:id="MLoad"/>
-          </Menu>
-      </MenuBar>
+<Pane fx:controller="core.Controller" xmlns:fx="http://javafx.com/fxml" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+    <VBox fx:id="vMenu" >
+        <MenuBar layoutX="14.0" layoutY="14.0">
+             <Menu mnemonicParsing="false" text="Игра" >
+                <MenuItem mnemonicParsing="false" text="Сохранить" fx:id="MSave"/>
+                <MenuItem mnemonicParsing="false" text="Загрузить" fx:id="MLoad"/>
+             </Menu>
+        </MenuBar>
+    </VBox>
 </Pane>

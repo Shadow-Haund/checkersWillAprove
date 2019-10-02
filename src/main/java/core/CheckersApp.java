@@ -1,6 +1,7 @@
 package core;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -81,12 +82,26 @@ public class CheckersApp extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) throws Exception {
         Scene scene = new Scene(createContent());
         primaryStage.setTitle("Шашки... вероятно русские но вообще я не уверен");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+    /*
+    String fxmlResource = "MainWindow.fxml";
+        Parent panel;
+        panel = FXMLLoader.load(getClass().getResource(fxmlResource));
+        Scene scene = new Scene(panel);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+
+    Scene scene = new Scene(createContent());
+        primaryStage.setTitle("Шашки... вероятно русские но вообще я не уверен");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    */
 
     private Piece makePiece(PieceType type, int x, int y) {
         Piece piece = new Piece(type, x, y);
